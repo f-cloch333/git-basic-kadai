@@ -1,0 +1,31 @@
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+ayabeyukikonoMacBook-Pro:~ ayabeyukiko$ cd Desktop
+ayabeyukikonoMacBook-Pro:Desktop ayabeyukiko$ mkdir git_challenge
+ayabeyukikonoMacBook-Pro:Desktop ayabeyukiko$ cd git_challenge
+ayabeyukikonoMacBook-Pro:git_challenge ayabeyukiko$ git init
+Initialized empty Git repository in /Users/ayabeyukiko/Desktop/git_challenge/.git/
+ayabeyukikonoMacBook-Pro:git_challenge ayabeyukiko$ echo "Hello, world" >> hello_world.txt
+ayabeyukikonoMacBook-Pro:git_challenge ayabeyukiko$ git add hello_world.txt
+ayabeyukikonoMacBook-Pro:git_challenge ayabeyukiko$ git commit -m "hello_world.txtを追加"
+[main (root-commit) af090bb] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+ayabeyukikonoMacBook-Pro:git_challenge ayabeyukiko$ git add hello_world.txt
+ayabeyukikonoMacBook-Pro:git_challenge ayabeyukiko$ git commit -m "日本語訳を追記"
+[main cc119ea] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+ayabeyukikonoMacBook-Pro:git_challenge ayabeyukiko$ git log
+commit cc119ea8b7af9b0d22e2f33e1e6d9f574bb5b4d3 (HEAD -> main)
+Author: f-cloch333 <yuuchi3bluestar@yahoo.co.jp>
+Date:   Sat Dec 23 11:34:18 2023 +0900
+
+    日本語訳を追記
+
+commit af090bb83e8efbda880723537324894134cfb9b2
+Author: f-cloch333 <yuuchi3bluestar@yahoo.co.jp>
+Date:   Sat Dec 23 11:28:42 2023 +0900
+
+    hello_world.txtを追加
+ayabeyukikonoMacBook-Pro:git_challenge ayabeyukiko$ 
